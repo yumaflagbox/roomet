@@ -1,0 +1,93 @@
+/* タブレット向けレイアウト */
+
+/* ブレイクポイントが1000px以下のときのメディアクエリを設定してください */
+@media (max-width:1000px) {
+    /* lessonクラスのCSSを指定してください */
+    .feature{
+      width:50%;
+      margin-bottom:50px;
+    }
+
+    .container h1{
+      font-size:32px;
+    }
+
+    h2{
+      font-size:20px;
+    }
+
+  }
+
+
+
+  /* スマホ向けレイアウト */
+
+/* ブレイクポイントが670px以下の時のメディアクエリを設定してください */
+@media (max-width:670px) {
+  
+  .header-right {
+    display: none;
+    
+  }
+  
+  .menu-icon {
+    display: block;
+    margin-right:20px;
+  }
+  
+
+
+    /* .lessonのwidthを100%に指定してください */
+    .register-left{
+      width:100%;
+      margin-bottom:20px;
+    }
+
+    .container h1{
+      font-size:24px;
+    }
+
+    h2{
+      font-size:14px;
+    }
+
+    .register-right{
+        width:100%;
+  
+      }
+    
+    /* <footer>の中身を中央寄せにしてください。 */
+    footer{
+      text-align:center;
+    }
+    
+    .message-text{
+        width:100%;
+        padding-bottom:50px;
+    }
+    .message-image{
+        width:100%;
+    }
+
+    .message{
+        display:block;
+
+    }
+
+    .btn{
+        width:80%;
+        margin-bottom:10px;
+        height:60px;
+      }
+
+    .modal{
+      width:60%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    
+  }
