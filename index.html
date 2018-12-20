@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Roommate</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+
+<header>
+    div class="container">
+        <div class="header-left">
+            <img id="top-btn" class="logo" src="https://github.com/yumaflagbox/roommate/blob/master/logo2.png?raw=true">
+        </div>
+
+            <span class="fa fa-bars menu-icon"></span>
+
+        <div class="header-right">
+            <div class="signup signup-show">新規登録</div>
+            <div class="login" id="login-show">ログイン</div>
+        </div>
+    </div>
+</header>
+
+
+
+ <div class="signup-modal-wrapper" id="signup-modal">
+    <div class="modal">
+        <!-- "close-modal"というclassをつけてください -->
+      <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+      <div id="signup-form">
+        <h2>Emailで新規登録</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="メールアドレス">
+          <input class="form-control" type="password" placeholder="パスワード">
+          <div id="submit-btn">新規登録</div>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+  <div class="login-modal-wrapper" id="login-modal">
+    <div class="modal">
+        <!-- "close-modal"というclassをつけてください -->
+      <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+      <div id="login-form">
+        <h2>Emailログイン</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="メールアドレス">
+          <input class="form-control" type="password" placeholder="パスワード">
+          <div id="submit-btn">ログイン</div>
+        </form>
+      </div>
+    </div>
+  </div>
+           
+      
+
+
+
+    <div class="top-wrapper">
+        <div class="container">
+            <h1>部屋を貸し借りし、理想のルームメイトを見つけましょう！</h1>
+
+          
+            <select class="btn city">
+                <option value="who">エリアを選択</option>
+                <option value="渋谷">渋谷</option>
+                <option value="新宿">新宿</option>
+                <option value="荻窪">荻窪</option>
+                <option value="秋葉原">秋葉原</option>
+                <option value="豊洲">豊洲</option>
+              </select>
+
+            <a href="#" class="btn search">部屋を検索する</a>
+
+        </div>
+        </div>
+    </div>
+    
+
+<div class="feature-wrapper">
+    <div class="container">
+        <div class="heading"><h2>注目のお部屋</h2></div>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-photo">
+                    <img src="https://github.com/yumaflagbox/roommate/blob/master/room1.jpeg?raw=true">
+                </div>
+                <p class="text-contents">¥35,000 in 渋谷</p>
+            </div>
+        
+
+
+            <div class="feature">
+                    <div class="feature-photo">
+                        <img src="https://github.com/yumaflagbox/roommate/blob/master/room8%20(1).jpg?raw=true">
+                    </div>
+                    <p class="text-contents">¥30,000 in 新宿</p>
+             </div>
+
+
+                <div class="feature">
+                        <div class="feature-photo">
+                            <img src="https://github.com/yumaflagbox/roommate/blob/master/room4%20(1).jpg?raw=true">
+                        </div>
+                        <p class="text-contents">¥35,000 in 目黒</p>
+            </div>
+
+            <div class="feature">
+                    <div class="feature-photo">
+                        <img src="https://github.com/yumaflagbox/roommate/blob/master/room3%20(1).jpg?raw=true">
+                    </div>
+                    <p class="text-contents">¥40,000 in 恵比寿</p>
+        </div>
+        <div class='clear'></div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="message-wrapper">
+
+    <div class="container">
+
+            <div class="messages">
+
+                <div class="message">
+
+                    <div class="message-image">
+                        <img src="https://github.com/yumaflagbox/roommate/blob/master/message1.jpg?raw=true">
+                    </div>
+
+                    <div class="message-text">
+                        <h2>あなたに合ったお部屋が借りれる</h2>
+                        <h3>すべての人のためのお部屋</h3>
+                        <p>あなたが一緒に住むために新しいルームメイトを探しているとき、引越して家賃を分割する人が必要な場合は、Roomeeを使用してください。</p>
+                        <h3>柔軟なレンタル条件</h3>
+                        <p>3ヶ月、1年間など短期〜長期までの契約が用意されています。</p>
+                    </div>
+
+                </div>
+
+
+                <div class="message">
+
+                    <div class="message-image">
+                        <img src="https://github.com/yumaflagbox/roommate/blob/master/message2.jpg?raw=true">
+                    </div>
+                    <div class="message-text">
+                        <h2>安全に部屋を貸せます</h2>
+                        <h3>バックグラウンドチェック</h3>
+                        <p>潜在的なルームメイトにあなたのリスティングに応募する前に、バックグラウンドチェックを完了するよう依頼することで、誰にレンタルしているかを知ることができます。</p>
+                        <h3>セキュアなサービス内メッセージング</h3>
+                        <p>ウェブサイトを通じて潜在的なルームメイトとチャットして、連絡先情報を非公開にしてください。</p>
+                    </div>
+                </div>
+
+
+                <div class="message">
+                    <div class="message-image">
+                        <img src="https://github.com/yumaflagbox/roommate/blob/master/message3.jpg?raw=true">
+                    </div>
+
+                    <div class="message-text">
+                        <h2>より簡単に賃貸する</h2>
+                        <h3>オンライン予約</h3>
+                        <p>興味のある賃貸人からの予約リクエストを簡単に確認できます。あなたの部屋の予約要求を承認すると、私たちはあなたの上場を市場から外し、安全な支払いを設定します。</p>
+                        <h3>安全な支払い</h3>
+                        <p>潜在的なルームメイトがあなたの部屋を予約すると、あなたのための第1月の家賃支払いを保持し、安全に転送します。</p>
+                    </div>
+                    
+                </div>
+        
+    
+
+
+            </div>
+    </div>
+
+       
+</div>
+
+
+        <div class="register-wrapper">
+            <div class="container">
+                <div class="registers">
+                    <div class="register">
+                       <div class="register-left">
+                          <p>部屋を探していますか？</p>
+                          <a href="#" class="btn looking signup-show">部屋を検索する</a>
+                        </div>
+                    </div>
+                    <div class="register">
+                       <div class="register-right">
+                         <p>部屋を埋めたいですか？</p>
+                         <a href="#" class="btn need signup-show">部屋を掲載する</a>
+                       </div>
+                    </div>
+                
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+        </div>
+
+ <footer>
+     <div class="container">
+         <img src="https://github.com/yumaflagbox/roommate/blob/master/logo2.png?raw=true">
+         <p>Rent rooms and find roommates in our verified community</p><br>
+         <p>©2018 Roomate</p>
+     </div>
+ </footer>
+
+ <script src="script.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,392 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+*{
+  box-sizing:border-box;
+}
+
+
+/* ヘッダー */
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #24292e;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top:10px;
+  margin-bottom:10px;
+
+}
+
+.header-left {
+  float: left;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+.header-right {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-right .signup {
+  line-height: 65px;
+  padding: 0 25px;
+  display: block;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+} 
+
+.header-right .login {
+  line-height: 65px;
+  padding: 0 25px;
+  display: block;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+  margin-left:20px;
+} 
+
+.header-right .signup:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right .login:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ログインポップアップ */
+
+.login-modal-wrapper , .signup-modal-wrapper{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form, #login-form {
+  width: 100%;
+}
+
+#signup-form h2, #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input, #login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+
+
+
+/* 画面上部 */
+
+.top-wrapper{
+    text-align:center;
+    background-size:cover;
+    padding-top:150px;
+    padding-bottom:100px;
+    background-image: linear-gradient(180deg,hsla(0,0%,100%,0) 60%,#fff),linear-gradient(70deg,#dbedff 32%,#ebfff0);
+    
+  }
+
+  .container {
+    max-width:1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container h1{
+    color:black;
+    opacity: 0.7;
+    font-size:36px;
+    font-weight:bold;
+    }
+    
+
+    .btn{
+        display:inline-block;
+        padding:15px 60px;
+        opacity:0.8;
+        border-radius: 4px;
+        text-align: center;
+        height:70px;
+        font-size:20px;
+      }
+
+      .btn:hover{
+        opacity:1;
+      }
+
+     
+
+      .city{
+        background-color: #28a745;
+        color: #fff;
+        margin-top:15px;
+        margin-left:15px;
+        border-top: solid 1px #4745472f; 
+        border-right: solid 1px #4745472f; 
+        border-bottom: solid 1px #4745472f; 
+        border-left:solid 1px#4745472f;
+        width:250px;
+        
+          }
+
+       
+      .search{
+        background-color: #eff3f6;
+        margin-top:15px;
+        margin-left:15px;
+        color: #24292e;
+        border-top: solid 1px #4745472f; 
+        border-right: solid 1px #4745472f; 
+        border-bottom: solid 1px #4745472f; 
+        border-left:solid 1px#4745472f; 
+       
+        }
+
+      
+        .clear {
+          clear: left;
+        }
+
+    
+        /* 注目のルーム */
+
+          .feature-wrapper{
+            
+            background-color: white;
+            text-align:center;
+            padding:40px o;
+            border: 1px solid #d1d5da;
+            margin: auto;
+          }
+
+          .heading{
+             padding-top:10px;
+             padding-bottom:10px;
+          }
+
+          .heading h2 {
+            font-weight: bold;
+            font-size: 22px;
+
+          }
+
+          .feature{
+              float:left;
+              width:25%;
+          }
+
+          .feature-photo {
+            float: left;
+            width: 95%;
+            height: 180px;
+            position: relative;
+            overflow: hidden;
+          }
+
+          .text-contents{
+              widows: 80%;
+              display:inline-block;
+              margin-top:10px;
+              font-size: 16px;
+              font-weight: 900;
+              padding-bottom:15px;
+          }
+
+
+/* ３つのメリット紹介 */
+          
+          .message-wrapper {
+            margin-top: 40px;
+            text-align:left;
+            display:inline-block;
+        }
+
+
+        .message {
+            margin-top: 40px;
+            height:100%;
+            display: flex;
+           
+        }
+
+        .message-text{
+            width:50%;
+            margin-left:15px;
+            padding:20px 0;
+            float:right;      
+            display:inline-block;
+        }
+
+        .message-text h2{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .message-text h3{
+            color: #0366d6;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .message-image{
+            width:50%;
+            height:100%;
+            float:left;
+            display:inline-block;
+        }
+        
+        .message-image img{
+          width:95%;
+          height:100%;
+      }
+       
+
+
+
+/* ユーザー・ホスト会員登録 */
+       
+        .register-wrapper{
+          width: 90%;
+          display: flex;
+          margin-top: 150px;
+          text-align: center;
+        }
+
+        .register-wrapper P{
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        .register-wrapper a{
+          color:white;
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 900;
+          font-family: "Lovelo", "Avenir", "Roboto", sans-serif;
+        }
+
+      
+        .looking{
+          background-color: #80a1fe;
+          margin-top:10px;
+          padding:15px 80px;
+        }
+
+        .need{
+          background-color: #efcea3;
+          margin-top:10px;
+          padding:15px 80px;
+        }
+
+
+        .register-left{
+          float:left;
+          width:45%;
+          border: 5px solid #80a1fe;
+          padding: 40px 5px;
+        }
+
+        .register-right{
+          float:right;
+          width:45%;
+          border: 5px solid #faf0e3;
+          padding: 40px 5px;
+        }
+
+
+/* フッター */
+footer{
+  padding:30px 0;
+  border-top:1px solid #eee;
+  margin-top:60px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer img {
+  width: 124px;
+}
